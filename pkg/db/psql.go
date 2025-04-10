@@ -1,4 +1,4 @@
-package database
+package psql
 
 import (
 	"context"
@@ -40,7 +40,7 @@ func Connect() Pgx {
 		panic(err)
 	}
 
-	log.Print("$$$$Connected to database")
+	log.Print("$$$$Connected to db")
 
 	return conn
 }
